@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Club Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Verdana', 'Geneva', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px;
+    }
+
+    nav {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      flex: 0 1 250px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    a.logo img {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    .main {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .main-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    i.fas {
+      font-size: 36px;
+    }
+
+    .main-skills,
+    .main-course {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card,
+    .course-box {
+      flex: 0 1 calc(25% - 20px);
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      overflow: hidden;
+    }
+
+    .card:hover,
+    .course-box:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .html,
+    .css,
+    .js {
+      color: #4CAF50;
+      font-size: 40px;
+      margin-top: 20px;
+    }
+
+    .course-box ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .course-box ul li {
+      margin-right: 20px;
+      list-style: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .course-box ul li.active,
+    .course-box ul li:hover {
+      color: #4CAF50;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+            <img src="/logo.jpg" alt="Sports Club Logo">
+            <span class="nav-item">Sports Club Dashboard</span>
+          </a></li>
+        <li><a href="#">
+            <i class="fas fa-home"></i>
+            <span class="nav-item">Home</span>
+          </a></li>
+        <li><a href="">
+            <i class="fas fa-users"></i>
+            <span class="nav-item">Players</span>
+          </a></li>
+        <li><a href="">
+            <i class="fas fa-futbol"></i>
+            <span class="nav-item">Matches</span>
+          </a></li>
+        <li><a href="">
+            <i class="fas fa-chart-bar"></i>
+            <span class="nav-item">Statistics</span>
+          </a></li>
+        <li><a href="">
+            <i class="fas fa-cogs"></i>
+            <span class="nav-item">Settings</span>
+          </a></li>
+        <li><a href="">
+            <i class="fas fa-question-circle"></i>
+            <span class="nav-item">Help</span>
+          </a></li>
+        <li><a href="" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item">Log out</span>
+          </a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Welcome to the Sports Club Dashboard</h1>
+        <i class="fas fa-users"></i>
+      </div>
+      <div class="main-skills">
+        <div class="card">
+          <i class="fas fa-futbol"></i>
+          <h3>Matches</h3>
+          <p>Explore and manage matches</p>
+          <button>View Matches</button>
+        </div>
+        <div class="card">
+          <i class="fas fa-users"></i>
+          <h3>Players</h3>
+          <p>Manage your team players</p>
+          <button>View Players</button>
+        </div>
+        <div class="card">
+          <i class="fas fa-chart-bar"></i>
+          <h3>Statistics</h3>
+          <p>Get insights into club statistics</p>
+          <button>View Statistics</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
